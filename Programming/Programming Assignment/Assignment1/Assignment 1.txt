@@ -1,0 +1,76 @@
+1. What's the output of following program:
+#include<iostream>
+void main()
+{
+	int i = 100;
+	i = i + i;
+	std::cout << "V1:" << i + i << i << std::endl;
+}
+
+2. What is the output of following program:
+#include<iostream>
+void main()
+{
+	int i = 6;
+	double j;
+	j = i / 4;
+	std::cout << "Val = " << j << std::endl;
+}
+
+3.Write a program that declares two intergers, assigns them the values of 20 and 50, 
+and displays result of their division.
+
+4. Find bug(s) in the following code, if any:
+#include<stdio.h>
+void main()
+{
+	double i = 12, j = 5, avg;
+	avg = i + j / 2;
+	printf("Avg = %.2f\n", avg);
+}
+
+5. Write a program to print: Aristotle said, “Well begun is half done”.
+6. Write a program to print: This is the share for lecture slides: \\10.100.56.21\Lecture\Lavneet Singh\IT603.
+7. Write a program to take input from three students (one by one) - their names and marks obtained (out of maximum of 500).
+Then calculate their percentages and print in the form:
+<student name1> scored x.x%
+<student name2> scored x.x%
+<student name3> scored x.x%
+[Note: i) Avoid using loops as we have not yet covered them. ii) Maximum marks is fixed to 500.]
+
+8. Write a program in input a string that may includ spaces and calculate - 
+i) number of words in it (ie group of letters separated by space. 
+think about different way user might input, like what if there are more than one space, 
+or, spaces in the begining / end of the string
+ii) number of vowels in the string
+
+9. Write a program to print multiplication table (upto 10) of any number. The output should be like this:
+5 x 1 = 5
+5 x 2 = 10
+..and so on till
+5 x 10 = 50
+
+10. Write a program to count number of digits in any number.
+(Hint: Two integer divisions of any two digit number by 10 results in 0)
+
+11. Write a program to toggle nth bit of a number.
+
+12. Write a program to print all odd number between 1 to 100.
+
+13. Write a program to enter any number and print its reverse.
+
+14. Write a program to input marks of five subjects
+Data Structures, C Programming, DB, Mathematics and CS. Assume 100 as max marks. 
+Calculate percentage and grade according to following:
+Percentage >= 90% : Grade A
+Percentage >= 80% : Grade B
+Percentage >= 70% : Grade C
+Percentage >= 60% : Grade D
+Percentage >= 40% : Grade E
+Percentage < 40% : Grade F
+
+15. Write a program to input any alphabet and check whether it is vowel or consonant.
+
+16. Write a program to input month number and print number of days in that month.
+
+17. Write a program to input all sides of a triangle and check whether triangle is valid or not.
