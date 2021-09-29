@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Assignment3.cpp" />
+    <ClCompile Include="G:\Desktop\Others\Solution3.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Assignment 3.txt" />

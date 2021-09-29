@@ -18,6 +18,9 @@
     <ClCompile Include="Assignment4.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="G:\Desktop\Others\Solution4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Assignment 4.txt">
