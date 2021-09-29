@@ -10,6 +10,21 @@
 #include <cctype>
 
 using namespace std;
+using uint = unsigned int;
+
+void reverseArr(double a[], const int N) {
+    
+    int n = N - 1;
+    double temp;
+
+    for (int i = 0; i < (N/2); i++)
+    {
+        temp = a[i];
+        a[i] = a[n];
+        a[n] = temp;
+        n--;
+    }
+}
 
 void Q1() {
 
@@ -22,7 +37,7 @@ void Q1() {
         cin >> arr[i];
     }
 
-    reverse(arr, arr + N);
+    reverseArr(arr, N);
 
     cout << endl << "After Reversing : ";
 
@@ -152,7 +167,8 @@ void Q3() {
 
             if ((row < 65 || row > 80) || (col < 1 || col > 20)) {
                 cout << endl << "Invalid Seat number..." << endl;
-            } else {
+            }
+            else {
                 row -= 65;
                 col -= 1;
                 if (seats[row][col] == 'X')
@@ -267,8 +283,9 @@ void Q4() {
 
 void Q5() {
 
+    const int R{ 100 }, C{ 100 };
     int N{};
-    char decor[100][100]{};
+    char decor[R][C]{};
 
     cout << "Enter Size of Row/Col : ";
     cin >> N;
@@ -321,10 +338,123 @@ int main()
 
 		//Q1();
 		//Q2();
-		//Q3();
+		Q3();
 		//Q4();
-		Q5();
+		//Q5();
 
 		cout << endl << "Do you want to run this question again [1 for yes] : ";
 	} while (cin >> loop && cin.ignore() && cout << "-----" << endl);
 }
+
+
+//
+//#include <iostream>
+//using namespace std;
+//using uint = unsigned int;
+//
+//const uint R = 6;
+////const uint C = 8;
+//const char firstRow = 'A';
+//const char occupiedSymb = 'X';
+//
+//void Initialize(char(&s)[R][C])
+//{
+//    for (auto& r : s)
+//        for (auto& cell : r)
+//            cell = '*';
+//}
+//
+//void ShowUI(char(&seats)[R][C])
+//{
+//    system("cls");
+//    cout << "Current Status:" << endl;
+//
+//    auto rowName = 'A';
+//    for (const auto& r : seats)
+//    {
+//        for (const auto& cell : r)
+//            cout << cell << ' ';
+//
+//        cout << " --> " << rowName++ << endl;
+//    }
+//    cout << "\nvvvvvvvvvvv Screen this way" << endl;
+//
+//    cout << "1. Book ticket" << endl;
+//    cout << "2. Cancel ticket" << endl;
+//    cout << "3. Exit" << endl;
+//
+//    cout << "\n* => available seat" << endl;
+//    cout << "X = > occupied / unavailable seat" << endl;
+//
+//}
+//
+//bool Validate(const char& rowName, const uint & seatNumber)
+//{
+//    bool isValid{ false };
+//    if (rowName >= firstRow && rowName <= firstRow + R && seatNumber >= 1 && seatNumber <= C)
+//    {
+//        isValid = true;
+//    }
+//
+//    return isValid;
+//}
+//
+//std::pair<char, uint> TakeInput()
+//{
+//    int op{ 0 };
+//    char rowName{ NULL };
+//    uint seatNumber{ 0 };
+//
+//    cin >> op;
+//
+//    if (op == 1)
+//    {
+//        do
+//        {
+//            cin >> rowName >> seatNumber;
+//            // validate the input
+//        } while (!Validate(rowName, seatNumber));
+//    }
+//
+//    return std::make_pair(rowName, seatNumber);
+//}
+//
+//void ProcessInput(std::pair<char, uint> choice, char(&s)[R][C])
+//{
+//    auto rowName = choice.first;
+//    auto col = choice.second - 1;
+//
+//    int row = rowName - firstRow;
+//    s[row][col] = occupiedSymb;
+//}
+//
+//void A4Q3()
+//{
+//    char seats[R][C]{}; // data model
+//
+//    Initialize(seats);
+//
+//    for (;; )
+//    {
+//        // show the UI
+//        ShowUI(seats);
+//
+//        // take input
+//        auto choice = TakeInput();
+//
+//        if (!Validate(choice.first, choice.second))
+//            break;
+//
+//        // process the input
+//        ProcessInput(choice, seats);
+//    }
+//
+//    // -> loop
+//}
+//
+//void main1()
+//{
+//    //A4Q3();
+//    // A4Q5 ();
+//    // A4Q6 ();
+//}
