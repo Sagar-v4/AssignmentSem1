@@ -2,61 +2,49 @@ package Assignment4;
 
 public class Q1 {
 
-    int top = 0, capacity = 2;
+    int top = 0, capacity;
+    int[] arr = new int[100];
 
-    public Q1(int size) {
-        capacity = size;
-        top = 0;
+    public Q1(int size) { this.capacity = size; }
 
-    }
+    public void push(int val){ if (top < capacity) arr[top++] = val; }
 
-    int[] arr = new int[capacity];
+    public int pop() { return (top <= 0) ? 0 : arr[--top]; }
 
-    public void push(int val){
-        if (top < capacity) {
-            arr[2] = val;
-        } else {
-            System.out.println("Stack Overflow...");
-        }
-    }
+    public int peek() { return (top > 0 && capacity >= top) ? arr[top - 1] : 0; }
 
-    public int pop(){
-        if (top < 0){
-            System.out.println("Stack Underflow...");
-            return -1;
-        }
-        return arr[top--];
-    }
+    public int size() { return top; }
 
-    public int peek(){
-        return arr[top];
-    }
+    public boolean isEmpty() { return top == 0; }
 
-    public int size(){
-        return (top+1);
-    }
-
-    public boolean isEmpty(){
-        return (top == 0);
-    }
-
-    public boolean isFull(){
-        return (top+1 == capacity);
-    }
+    public boolean isFull() { return top >= capacity; }
 
     public static void main(String[] args) {
 
-        Q1 stack = new Q1(5);
+        Q1 stack1 = new Q1(5);
 
-        System.out.println("isEmpty : " + stack.isEmpty());
-        System.out.println("isFull : " + stack.isFull());
+        System.out.println("isEmpty : " + stack1.isEmpty());
+        System.out.println("isFull : " + stack1.isFull());
 
-        stack.push(11);
-        stack.push(22);
-        stack.push(33);
+        stack1.push(11);
+        stack1.push(22);
+        stack1.push(33);
+        stack1.push(44);
+        stack1.push(55);
+        stack1.push(66);
 
-        System.out.println("isEmpty : " + stack.isEmpty());
-        System.out.println("isFull : " + stack.isFull());
+        System.out.println("Size : " + stack1.size());
+        System.out.println("Peek : " + stack1.peek());
+        System.out.println("isEmpty : " + stack1.isEmpty());
+        System.out.println("isFull : " + stack1.isFull());
+        System.out.println("Pop : " + stack1.pop());
+        System.out.println("Size : " + stack1.size());
+        System.out.println("Peek : " + stack1.peek());
+        System.out.println("isEmpty : " + stack1.isEmpty());
+        System.out.println("isFull : " + stack1.isFull());
+
+
+
 
     }
 

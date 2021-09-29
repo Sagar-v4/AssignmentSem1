@@ -1,4 +1,1 @@
-﻿  Assignment2.cpp
-F:\ \! Msc iT\Sem 1\Programming - IT603 - 3-0-2-4 - LS (GC)\Assignments\All Programming Assignment\Assignment2\Assignment2.cpp(104,19): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-F:\ \! Msc iT\Sem 1\Programming - IT603 - 3-0-2-4 - LS (GC)\Assignments\All Programming Assignment\Assignment2\Assignment2.cpp(187,23): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  Assignment2.vcxproj -> F:\ \! Msc iT\Sem 1\Programming - IT603 - 3-0-2-4 - LS (GC)\Assignments\All Programming Assignment\x64\Debug\Assignment2.exe
+﻿  Assignment2.vcxproj -> F:\ \! Msc iT\Sem 1\Z Assignments\Programming\Programming Assignment\x64\Debug\Assignment2.exe
