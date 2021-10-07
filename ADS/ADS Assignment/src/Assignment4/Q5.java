@@ -1,7 +1,5 @@
 package Assignment4;
 
-import com.sun.deploy.util.SyncAccess;
-
 public class Q5 {
 
     int[] arr = new int[100];
@@ -18,22 +16,13 @@ public class Q5 {
 
     public void pushR(int val){ if (topL <= topR) arr[topR--] = val; }
 
-    public int popL() {
-        int ans = (topL <= 0) ? 0 : arr[--topL];
-        arr[topL] = 0;
-        return ans;
+    public int popL() { return (topL <= 0) ? 0 : arr[--topL]; }
 
-    }
+    public int popR() { return (topR >= capacity) ? 0 : arr[++topR]; }
 
-    public int popR() {
-        int ans = (topR >= capacity) ? 0 : arr[++topR];
-        arr[topR] = 0;
-        return ans;
-    }
+    public int peekL() { return (topL > 0 && topR + 1 >= topL) ? arr[topL - 1] : 0; }
 
-    public int peekL() { System.out.println(topL); return (topL > 0 && topR + 1 >= topL) ? arr[topL - 1] : 0; }
-
-    public int peekR() { System.out.println(topR); return (topR > 0 && capacity >= topL) ? arr[topR + 1] : 0; }
+    public int peekR() { return (topR > 0 && capacity >= topL) ? arr[topR + 1] : 0; }
 
     public int sizeL() { return topL; }
 
@@ -50,15 +39,11 @@ public class Q5 {
     }
 
     public static void main(String[] args) {
-        Q5 stack = new Q5(10);
 
+        Q5 stack = new Q5(10);
 
         System.out.println("Empty : " + stack.isEmpty());
         System.out.println("Full : " + stack.isFull());
-
-
-//        stack.pushR(90);
-//        stack.pushR(91);
 
         stack.pushL(11);
         stack.pushL(12);
@@ -67,14 +52,6 @@ public class Q5 {
         stack.pushL(15);
         stack.pushL(16);
         stack.pushL(17);
-//        stack.pushL(18);
-//        stack.pushL(19);
-//        stack.pushL(20);
-//        stack.pushL(21);
-
-//        System.out.println(stack.popL());
-//        System.out.println(stack.popL());
-
 
         stack.pushR(91);
         stack.pushR(92);
@@ -82,15 +59,6 @@ public class Q5 {
         stack.pushR(94);
         stack.pushR(95);
         stack.pushR(96);
-//        stack.pushR(97);
-//        stack.pushR(98);
-//        stack.pushR(99);
-//        stack.pushR(100);
-//        stack.pushR(101);
-
-//        System.out.println(stack.popR());
-//        System.out.println(stack.popR());
-//        System.out.println(stack.popR());
 
         System.out.println("Size L : " + stack.sizeL());
         System.out.println("Size R : " + stack.sizeR());
