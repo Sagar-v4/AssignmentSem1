@@ -1,0 +1,6 @@
+﻿  Assignment6.cpp
+F:\ \! Msc iT\Sem 1\Z Assignments\Programming\Programming Assignment\Assignment6\Assignment6.cpp(117,28): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+F:\ \! Msc iT\Sem 1\Z Assignments\Programming\Programming Assignment\Assignment6\Assignment6.cpp(147,22): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+F:\ \! Msc iT\Sem 1\Z Assignments\Programming\Programming Assignment\Assignment6\Assignment6.cpp(224,28): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+F:\ \! Msc iT\Sem 1\Z Assignments\Programming\Programming Assignment\Assignment6\Assignment6.cpp(352,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Assignment6.vcxproj -> F:\ \! Msc iT\Sem 1\Z Assignments\Programming\Programming Assignment\x64\Debug\Assignment6.exe

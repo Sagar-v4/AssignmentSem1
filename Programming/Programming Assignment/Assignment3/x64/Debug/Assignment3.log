@@ -1,2 +1,18 @@
-﻿  Assignment3.cpp
-  Assignment3.vcxproj -> F:\ \! Msc iT\Sem 1\Programming - IT603 - 3-0-2-4 - LS (GC)\Assignments\All Programming Assignment\x64\Debug\Assignment3.exe
+﻿  Solution3.cpp
+G:\Desktop\Others\Solution3.cpp(85,13): warning C4244: 'initializing': conversion from 'double' to 'uint', possible loss of data
+G:\Desktop\Others\Solution3.cpp(97,53): warning C4554: '<<': check operator precedence for possible error; use parentheses to clarify precedence
+G:\Desktop\Others\Solution3.cpp(103,53): warning C4554: '<<': check operator precedence for possible error; use parentheses to clarify precedence
+G:\Desktop\Others\Solution3.cpp(125,19): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+G:\Desktop\Others\Solution3.cpp(131,20): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+G:\Desktop\Others\Solution3.cpp(145,27): warning C4554: '<<': check operator precedence for possible error; use parentheses to clarify precedence
+G:\Desktop\Others\Solution3.cpp(147,27): warning C4554: '<<': check operator precedence for possible error; use parentheses to clarify precedence
+G:\Desktop\Others\Solution3.cpp(172,5): error C2440: 'initializing': cannot convert from 'const char [12]' to 'char *'
+G:\Desktop\Others\Solution3.cpp(172,5): message : Conversion from string literal loses const qualifier (see /Zc:strictStrings)
+G:\Desktop\Others\Solution3.cpp(173,5): error C2440: 'initializing': cannot convert from 'const char [5]' to 'char *'
+G:\Desktop\Others\Solution3.cpp(173,5): message : Conversion from string literal loses const qualifier (see /Zc:strictStrings)
+G:\Desktop\Others\Solution3.cpp(174,5): error C2440: 'initializing': cannot convert from 'const char [5]' to 'char *'
+G:\Desktop\Others\Solution3.cpp(174,5): message : Conversion from string literal loses const qualifier (see /Zc:strictStrings)
+G:\Desktop\Others\Solution3.cpp(175,5): error C2440: 'initializing': cannot convert from 'const char [14]' to 'char *'
+G:\Desktop\Others\Solution3.cpp(175,5): message : Conversion from string literal loses const qualifier (see /Zc:strictStrings)
+G:\Desktop\Others\Solution3.cpp(176,5): error C2440: 'initializing': cannot convert from 'const char [18]' to 'char *'
+G:\Desktop\Others\Solution3.cpp(176,5): message : Conversion from string literal loses const qualifier (see /Zc:strictStrings)

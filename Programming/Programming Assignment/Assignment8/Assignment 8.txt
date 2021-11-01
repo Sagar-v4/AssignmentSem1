@@ -1,0 +1,16 @@
+
+1. Create a structure representing a player. It should have player's first name, last name, age and name of the game. Do the following activities on this structure-
+	a. Write a function that creates object of this structure, reads inputs from user for the properties of the object and prints the read values.
+	b. Do a. above using pointer to the structure object.
+	c. Create an array of size 4 and read from user the values and print them
+	d. Do c. above using pointer notation to iterate through the array of structure.
+
+2. Write a function SortByAge(PLAYER *players) that sorts the array of structure created in problem 1 by age property. PLAYER is the typedef of player structure.
+
+3. Write a function, FindPlayer, that finds a player in the array of PLAYER structures by player's first name.
+
+4. Write a function FindRecord(PLAYER *players, PLAYER player), that finds if the player exists in the players list. This function should compare whole structure (unlike FindPlayer() in problem 3 which compares only first name).
+
+5. Creat a struct Fraction to represent a fraction p/q, where p and q are integers (could be signed) and q != 0. Write functions that operate on such fraction (like addition, subtraction, multiplication).
+
+6. Create a struct Complex to represent a complex number a+ib where b is the imaginary part and a is the real part. Write functions to do complex number operations using this data structure.

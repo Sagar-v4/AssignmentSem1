@@ -1,0 +1,13 @@
+NOTE: Use pointers where ever possible.
+Write a program that takes a string as input and ... 
+1. counts the number of vowels in it.
+2. counts the number of capital letters in it.
+3. converts the string to all capital letters.
+4. counts the number of words in it.
+5. reverses the string and prints it.
+6. reverses the words in the string. eg. If "this is good" is input, then output should be "good is this".
+7. counts the number of single, two or three letter words.
+8. checks if string is a palindrome. i.e. symetric about central character. Eg. if input is "ABCDCBA" then it is a palindrome. 
+9. then takes another string as input. It then searches for the second string in the first string. Do not use library functions for searching in the string.
+10. then takes a number, say i, as input. It then splits the string into substrings of size i. Use two dimensional array to store the split substrings and then iterate through this array to display the substrings.
+11. Try problem 9th with space characters ignored.

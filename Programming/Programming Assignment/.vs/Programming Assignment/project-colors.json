@@ -35,7 +35,27 @@
       "ProjectGuid": "c45ef886-c55c-4f0c-b27c-17434fe8ea56",
       "DisplayName": "Assignment5",
       "ColorIndex": 5
+    },
+    "14dc11a1-ee34-4d5e-86c8-045c61355dae": {
+      "ProjectGuid": "14dc11a1-ee34-4d5e-86c8-045c61355dae",
+      "DisplayName": "Assignment6",
+      "ColorIndex": 6
+    },
+    "a6db7218-3da2-4d51-8c3e-19c89ba17919": {
+      "ProjectGuid": "a6db7218-3da2-4d51-8c3e-19c89ba17919",
+      "DisplayName": "Assignment7",
+      "ColorIndex": 7
+    },
+    "902cded0-9937-4235-bfe5-5d0db101ffdd": {
+      "ProjectGuid": "902cded0-9937-4235-bfe5-5d0db101ffdd",
+      "DisplayName": "Assignment8",
+      "ColorIndex": 8
+    },
+    "1f40621e-9a42-4cdf-af34-1395a6c26485": {
+      "ProjectGuid": "1f40621e-9a42-4cdf-af34-1395a6c26485",
+      "DisplayName": "Assignment9",
+      "ColorIndex": 9
     }
   },
-  "NextColorIndex": 6
+  "NextColorIndex": 10
 }
