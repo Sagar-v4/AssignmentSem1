@@ -19,6 +19,7 @@ const uint COLS{3};
 const uint ChatMSGS{16};
 const uint UIWidth{30};
 
+
 void Ass7InputString(char (&string)[Size])
 {
 	char *const s{string};

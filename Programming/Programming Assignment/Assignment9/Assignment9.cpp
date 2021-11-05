@@ -5,13 +5,13 @@
 
 #include <iostream>
 #include <iomanip>
-
+#include <string>
 using namespace std;
+
 using uint = unsigned int;
 
-const uint arrSize{ 4 };
-const uint funcSize{ 2 };
-
+const uint Pointers{ 5 };
+const uint nameSize{ 100 };
 
 /*
 
@@ -19,10 +19,48 @@ const uint funcSize{ 2 };
 
  */
 
-
-
 void Q1()
 {
+	string str[Pointers]{};
+	char* p[Pointers]{};
+	int j = 0;
+
+	for (int i = 0; i < Pointers; i++)
+		*(p + i) = new char[nameSize];
+
+	cout << "Enter 5 names : \n";
+	for (int i = 0; i < Pointers; i++)
+	{
+		cout << "Name " << (i+1) << " : ";
+		getline(cin, str[i], '\n');
+		int j = 0;
+
+		for (j = 0; j < str[i].length(); j++)
+			*(*(p + i) + j) = str[i][j];
+		*(*(p + i) + j) = '\0';
+	}
+
+	cout << endl << "Before Allocationg : " << endl;
+	for (int i = 0; i < Pointers; i++)
+	{
+		cout << _msize(*(p + i)) << " | " << * (p + i)  << endl;
+	}
+
+	cout << endl << "After Reallocating : " << endl;
+	for (int i = 0; i < Pointers; i++)
+	{
+		*(p + i) = new char[str[i].length() + 1];
+		for (j = 0; j < str[i].length(); j++)
+			*(*(p + i) + j) = str[i][j];
+		*(*(p + i) + j) = '\0';
+	}
+
+	for (int i = 0; i < Pointers; i++)
+	{
+		cout << setw(2) << _msize(*(p + i))  << " | " << *(p + i) << endl;
+		delete[] p[i];
+		p[i] = nullptr;
+	}
 }
 
 /*
@@ -36,9 +74,48 @@ Display the name, age and game of the player after reading the data. Make sure y
 
 */
 
+struct Player
+{
+	string name{};
+	string game{};
+	int age{};
+};
+
+void Q2Input(Player* p)
+{
+	char* input = new char[nameSize];
+
+	cout << "Enter Name: ";
+	cin.getline(input, nameSize);
+	p->name = input;
+
+	cout << "Enter Game Name: ";
+	cin.getline(input, nameSize);
+	p->game = input;
+
+	cout << "Enter age: ";
+	cin >> input;
+	p->age = stoi(input);
+
+	delete[] input;
+}
+
+void Q2display(Player* p)
+{
+	cout << endl << "Player Name: " << p->name << endl;
+	cout << "Player age: " << p->age << endl;
+	cout << "Player Game Name: " << p->game << endl;
+}
 
 void Q2()
 {
+	Player* p = new Player;
+
+	Q2Input(p);
+
+	Q2display(p);
+
+	delete p;
 }
 
 /*
@@ -47,20 +124,62 @@ void Q2()
 
 */
 
+void Q3matrixInitialization(int& m, int& n)
+{
+	cout << "Enter No. of Rows : ";
+	cin >> m;
+
+	cout << "Enter No. of Columns : ";
+	cin >> n;
+}
+
+bool Q3verify(const int m, const int n) { return (m > 0 && n > 0); }
+
+void Q3inputMatrix(const int m, const int n, int **p)
+{
+	cout << endl << "Enter " << (m * n) << " Elements : " << endl;
+
+	for (int i = 0; i < m; i++)
+	{
+		*(p + i) = new int[n];
+
+		for (int j = 0; j < n; j++)
+			cin >> *(*(p + i) + j);
+	}
+}
+
+void Q3displayMatrix(const int m, const int n, int** p)
+{
+	cout << endl << endl << "The matrix : " << endl;
+
+	for (int i = 0; i < m; i++)
+	{
+		for (int j = 0; j < n; j++)
+			cout << setw(4) << * (*(p + i) + j) << " ";
+		cout << endl;
+	}
+}
 
 void Q3()
 {
-}
+	int m{}, n{};
 
-/*
+	Q3matrixInitialization(m, n);
 
-4. Go through assignments 4 onwards and do those exercises where you can use dynamic memory allocation instead of constant sized arrays.=> Not part of lab evaluation
+	if ( Q3verify(m, n) )
+	{
+		int** p{ new int* [m] };
 
-*/
+		Q3inputMatrix(m, n, p);
 
+		Q3displayMatrix(m, n, p);
 
-void Q4()
-{
+		delete[]p;
+	}
+	else
+	{
+		cout << endl << "Invalid Row OR Col Initialized....." << endl;
+	}
 }
 
 void main()
@@ -73,7 +192,6 @@ void main()
 		//Q1();
 		//Q2();
 		//Q3();
-		//Q4();
 
 		cout << endl << endl << "Do you want to run this question again [1 for yes] : ";
 	} while (cin >> loop && cin.ignore() && cout << "-----" << endl);
