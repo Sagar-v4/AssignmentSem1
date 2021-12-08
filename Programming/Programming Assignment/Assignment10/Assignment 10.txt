@@ -1,0 +1,7 @@
+1. Use templates to write generic code that can store user objects in a linked list. The linked list node should have pointer to the user objects ie they should not store the user objects inside linked list nodes. Use unit tests to test your template library code for all scenarios including possible edge cases.
+
+2. Read data from file that has 100+ records to store the information in the linked list. You can get data from online resources, like top 100 contries by GDP or, 100 cities and data related to them. Top 100 noble prize winners - year, subject and name of scientist. Read this data and use the template code above to store the information in the linked list. Assume that data is in random order.
+
+3. Now, we want to have another linked list on top of this linked list to provide to users sorted data. The data can be sorted using any field of the object that has been stored in the first linked list. Use callback (ie std::function) to provide a comparison function to the user of this template library, and create a linked list of nodes that are pointing to first linked list nodes such that iterating through this 2nd list would give the data in sorted order. You can implement any sorting algorithm for this.
+
+Use free store as much as possible (and therefore, ensure that the memory is deleted properly)

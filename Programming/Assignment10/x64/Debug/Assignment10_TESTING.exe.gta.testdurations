@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GtaTestDurations xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Executable>F:\ \! Msc iT\Sem 1\Z Assignments\Programming\Assignment10\x64\Debug\Assignment10_TESTING.exe</Executable>
+  <TestDurations>
+    <TestDuration Test="shouldCreateLinkedLIstWithSampleData.shouldCreateList" Duration="1" />
+    <TestDuration Test="shouldCreateLinkedLIstWithSampleData2.shouldCreateList2" Duration="1" />
+    <TestDuration Test="shouldCreateLinkedLIstWithGDPValues.shouldPassCreationTestWithFile" Duration="1" />
+    <TestDuration Test="shouldCreateLinkedLIstWithGDPValues.shouldPassSortTestwithFile" Duration="1" />
+    <TestDuration Test="shouldCreateLinkedLIstWithSampleData1.shouldCreateList1" Duration="1" />
+  </TestDurations>
+</GtaTestDurations>
