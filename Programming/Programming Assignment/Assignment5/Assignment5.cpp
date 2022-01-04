@@ -301,7 +301,7 @@ void Q5()
 }
 
 //void main()
-void main1()
+void main()
 {
 	auto loop{ false };
 

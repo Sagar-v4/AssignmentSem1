@@ -140,8 +140,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Assignment5.cpp" />
-    <ClCompile Include="Decryption.cpp" />
-    <ClCompile Include="Encryption.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Assignment 5.txt" />

@@ -1,29 +1,3 @@
-﻿  Decryption.cpp
-F:\ \! Msc iT\Sem 1\Z Assignments\Programming\Programming Assignment\Assignment5\Decryption.cpp(15,22): error C2131: expression did not evaluate to a constant
-F:\ \! Msc iT\Sem 1\Z Assignments\Programming\Programming Assignment\Assignment5\Decryption.cpp(14,19): message : failure was caused by a read of a variable outside its lifetime
-F:\ \! Msc iT\Sem 1\Z Assignments\Programming\Programming Assignment\Assignment5\Decryption.cpp(14,19): message : see usage of 'argc'
-F:\ \! Msc iT\Sem 1\Z Assignments\Programming\Programming Assignment\Assignment5\Decryption.cpp(25,30): error C3863: array type 'float [s][2]' is not assignable
-F:\ \! Msc iT\Sem 1\Z Assignments\Programming\Programming Assignment\Assignment5\Decryption.cpp(26,38): warning C4552: '<<': result of expression not used
-F:\ \! Msc iT\Sem 1\Z Assignments\Programming\Programming Assignment\Assignment5\Decryption.cpp(31,44): warning C4305: 'initializing': truncation from 'double' to 'float'
-F:\ \! Msc iT\Sem 1\Z Assignments\Programming\Programming Assignment\Assignment5\Decryption.cpp(31,58): error C2131: expression did not evaluate to a constant
-F:\ \! Msc iT\Sem 1\Z Assignments\Programming\Programming Assignment\Assignment5\Decryption.cpp(14,19): message : failure was caused by a read of a variable outside its lifetime
-F:\ \! Msc iT\Sem 1\Z Assignments\Programming\Programming Assignment\Assignment5\Decryption.cpp(14,19): message : see usage of 'argc'
-F:\ \! Msc iT\Sem 1\Z Assignments\Programming\Programming Assignment\Assignment5\Decryption.cpp(40,30): error C3863: array type 'float [s][2]' is not assignable
-F:\ \! Msc iT\Sem 1\Z Assignments\Programming\Programming Assignment\Assignment5\Decryption.cpp(48,38): warning C4552: '<<': result of expression not used
-  Encryption.cpp
-F:\ \! Msc iT\Sem 1\Z Assignments\Programming\Programming Assignment\Assignment5\Encryption.cpp(23,33): error C2397: conversion from 'unsigned __int64' to 'int' requires a narrowing conversion
-F:\ \! Msc iT\Sem 1\Z Assignments\Programming\Programming Assignment\Assignment5\Encryption.cpp(23,33): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\ \! Msc iT\Sem 1\Z Assignments\Programming\Programming Assignment\Assignment5\Encryption.cpp(23,33): error C2397: conversion from 'unsigned __int64' to 'const int' requires a narrowing conversion
-F:\ \! Msc iT\Sem 1\Z Assignments\Programming\Programming Assignment\Assignment5\Encryption.cpp(23,33): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
-F:\ \! Msc iT\Sem 1\Z Assignments\Programming\Programming Assignment\Assignment5\Encryption.cpp(24,14): error C2131: expression did not evaluate to a constant
-F:\ \! Msc iT\Sem 1\Z Assignments\Programming\Programming Assignment\Assignment5\Encryption.cpp(23,26): message : failure was caused by call of undefined function or one not declared 'constexpr'
-F:\ \! Msc iT\Sem 1\Z Assignments\Programming\Programming Assignment\Assignment5\Encryption.cpp(23,26): message : see usage of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::size'
-F:\ \! Msc iT\Sem 1\Z Assignments\Programming\Programming Assignment\Assignment5\Encryption.cpp(36,28): error C3863: array type 'int [t][2]' is not assignable
-F:\ \! Msc iT\Sem 1\Z Assignments\Programming\Programming Assignment\Assignment5\Encryption.cpp(40,28): error C3863: array type 'int [t][2]' is not assignable
-F:\ \! Msc iT\Sem 1\Z Assignments\Programming\Programming Assignment\Assignment5\Encryption.cpp(43,32): warning C4552: '<<': result of expression not used
-F:\ \! Msc iT\Sem 1\Z Assignments\Programming\Programming Assignment\Assignment5\Encryption.cpp(48,61): error C2131: expression did not evaluate to a constant
-F:\ \! Msc iT\Sem 1\Z Assignments\Programming\Programming Assignment\Assignment5\Encryption.cpp(48,58): message : failure was caused by call of undefined function or one not declared 'constexpr'
-F:\ \! Msc iT\Sem 1\Z Assignments\Programming\Programming Assignment\Assignment5\Encryption.cpp(48,58): message : see usage of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::size'
-F:\ \! Msc iT\Sem 1\Z Assignments\Programming\Programming Assignment\Assignment5\Encryption.cpp(57,30): error C3863: array type 'float ['function'/2][2]' is not assignable
-F:\ \! Msc iT\Sem 1\Z Assignments\Programming\Programming Assignment\Assignment5\Encryption.cpp(65,38): warning C4552: '<<': result of expression not used
-  Generating Code...
+﻿  Assignment5.cpp
+F:\ \! Msc iT\Sem 1\Z Assignments\Programming\Programming Assignment\Assignment5\Assignment5.cpp(305,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Assignment5.vcxproj -> F:\ \! Msc iT\Sem 1\Z Assignments\Programming\Programming Assignment\x64\Debug\Assignment5.exe
